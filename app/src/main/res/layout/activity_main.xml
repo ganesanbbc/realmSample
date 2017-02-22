@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:id="@+id/targetContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/shape"
+
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/container1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight=".25"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight=".25"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/container3"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight=".25"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/container4"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight=".25"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/maincontainer"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight=".5"
+            android:background="@drawable/shape"
+            android:gravity="bottom">
+
+            <View
+                android:id="@+id/myimage1"
+                android:layout_width="40dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:background="#c40202" />
+
+            <View
+                android:id="@+id/myimage2"
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="#2e6eb9" />
+
+
+            <View
+                android:id="@+id/myimage3"
+                android:layout_width="40dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:background="#05d402" />
+
+            <View
+                android:id="@+id/myimage4"
+                android:layout_width="40dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:background="#d7d11d" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:onClick="checkResult"
+        android:gravity="center_horizontal"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:onClick="checkResult1"
+        android:gravity="center_horizontal"
+
+        />
+</LinearLayout>
